@@ -1,6 +1,6 @@
 <?php
 require_once('../init/initialization.php');
-$title = "Hosts || Login";
+$title = "Hosts || Forgot";
 require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "login-header.php");
 ?>
 <p class="login-box-msg">Forgot Password</p>
