@@ -168,61 +168,35 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
                                 <tr>
                                     <td>
                                         <img src="<?php echo public_url(); ?>storage/houses/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                        Another Product
+                                        Imenti
                                     </td>
-                                    <td>$29 USD</td>
+                                    <td>SHOP</td>
+                                    <td>25,000</td>
+                                    <td>55,000</td>
+                                    <td>65,000,000</td>
                                     <td>
-                                        <small class="text-warning mr-1">
-                                            <i class="fa fa-arrow-down"></i>
-                                            0.5%
-                                        </small>
-                                        123,234 Sold
-                                    </td>
-                                    <td>
-                                        <a href="#" class="text-muted">
-                                            <i class="fa fa-search"></i>
-                                        </a>
+                                        <button class="btn btn-info">
+                                            <i class="fa fa-info-circle"></i> VIEW
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <img src="<?php echo public_url(); ?>storage/houses/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                        Amazing Product
+                                        Hollywood
                                     </td>
-                                    <td>$1,230 USD</td>
+                                    <td>APARTMENT</td>
+                                    <td>25,000</td>
+                                    <td>55,000</td>
+                                    <td>65,000,000</td>
                                     <td>
-                                        <small class="text-danger mr-1">
-                                            <i class="fa fa-arrow-down"></i>
-                                            3%
-                                        </small>
-                                        198 Sold
-                                    </td>
-                                    <td>
-                                        <a href="#" class="text-muted">
-                                            <i class="fa fa-search"></i>
-                                        </a>
+                                        <button class="btn btn-info">
+                                            <i class="fa fa-info-circle"></i> VIEW
+                                        </button>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <img src="<?php echo public_url(); ?>storage/houses/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                        Perfect Item
-                                        <span class="badge bg-danger">NEW</span>
-                                    </td>
-                                    <td>$199 USD</td>
-                                    <td>
-                                        <small class="text-success mr-1">
-                                            <i class="fa fa-arrow-up"></i>
-                                            63%
-                                        </small>
-                                        87 Sold
-                                    </td>
-                                    <td>
-                                        <a href="#" class="text-muted">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </td>
-                                </tr>
+                                
+                                
                             </tbody>
                         </table>
                     </div>
