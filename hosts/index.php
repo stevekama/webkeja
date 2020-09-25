@@ -31,7 +31,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
                 <div class="small-box bg-info">
                     <div class="inner">
                         <h3>6</h3>
-                        
+
                         <p>My Properties</p>
                     </div>
                     <div class="icon">
@@ -83,6 +83,52 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header border-0">
+                        <div class="d-flex justify-content-between">
+                            <h3 class="card-title">Property Sales</h3>
+                            <a href="javascript:void(0);">View Report</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <p class="d-flex flex-column">
+                                <span class="text-bold text-lg">$18,230.00</span>
+                                <span>Total Income</span>
+                            </p>
+                            <p class="ml-auto d-flex flex-column text-right">
+                                <span class="text-success">
+                                    <i class="fa fa-arrow-up"></i> 33.1%
+                                </span>
+                                <span class="text-muted">Since Last Month</span>
+                            </p>
+                        </div>
+                        <!-- /.d-flex -->
+
+                        <div class="position-relative mb-4">
+                            <canvas id="sales-chart" height="200"></canvas>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-end">
+                            <span class="mr-2">
+                                <i class="fa fa-square text-primary"></i> This year
+                            </span>
+
+                            <span>
+                                <i class="fa fa-square text-gray"></i> Last year
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card -->
+
+            </div>
+
+        </div>
+        <!-- row -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header border-0">
                         <h3 class="card-title">My Properties</h3>
                     </div>
                     <div class="card-body table-responsive p-0">
@@ -91,28 +137,32 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
                                 <tr>
                                     <th>Property</th>
                                     <th>Type</th>
-                                    <th>Sales</th>
-                                    <th>More</th>
+                                    <th>Starting Price</th>
+                                    <th>Final Price</th>
+                                    <th>Total Income</th>
+                                    <th>View</th>
                                 </tr>
                             </thead>
-                             <tbody>
+                            <tbody>
                                 <tr>
                                     <td>
                                         <img src="<?php echo public_url(); ?>storage/houses/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
                                         Phalcon
                                     </td>
-                                    <td>$13 USD</td>
+                                    <td>FLAT</td>
                                     <td>
-                                        <small class="text-success mr-1">
-                                            <i class="fa fa-arrow-up"></i>
-                                            12%
-                                        </small>
-                                        12,000 Sold
+                                        15,000
                                     </td>
                                     <td>
-                                        <a href="#" class="text-muted">
-                                            <i class="fa fa-search"></i>
-                                        </a>
+                                        25,000
+                                    </td>
+                                    <td>
+                                        25,000,000
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-info">
+                                            <i class="fa fa-info-circle"></i> VIEW
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>

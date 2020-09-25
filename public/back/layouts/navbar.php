@@ -39,25 +39,6 @@
                         </li>
                     </ul>
                 </li>
-                
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fa fa-users"></i>
-                        <p>
-                            Tenants
-                            <i class="fa fa-angle-left right"></i>
-                            <span class="badge badge-info right">6</span>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
-                                <i class="fa fa-circle nav-icon"></i>
-                                <p>Tenants</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -111,6 +92,7 @@
                         <p>Profile</p>
                     </a>
                 </li>
+                
                 <li class="nav-item">
                     <a href="<?php echo base_url(); ?>hosts/login.php" class="nav-link">
                         <i class="nav-icon fa fa-sign-out"></i>

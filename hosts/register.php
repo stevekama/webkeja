@@ -10,10 +10,11 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "login-header.php
         <input type="text" class="form-control" name="fullnames" placeholder="Full Name">
         <div class="input-group-append">
             <div class="input-group-text">
-                <span class="fas fa-user"></span>
+                <span class="fa fa-user"></span>
             </div>
         </div>
     </div>
+
     <div class="input-group mb-3">
         <input type="email" name="email" class="form-control" placeholder="Email Address">
         <div class="input-group-append">
@@ -61,7 +62,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "login-header.php
         <input type="text" name="location" class="form-control" placeholder="Location">
         <div class="input-group-append">
             <div class="input-group-text">
-                <span class="fa fa-globe"></span>
+                <span class="fa fa-map-marker"></span>
             </div>
         </div>
     </div>
