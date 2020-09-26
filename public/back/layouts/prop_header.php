@@ -30,7 +30,6 @@ to get the desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         <!-- Navbar -->
@@ -42,9 +41,11 @@ to get the desired effect
                         <i class="fa fa-bars"></i>
                     </a>
                 </li>
+                
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?php echo base_url(); ?>index.php" class="nav-link">Home</a>
                 </li>
+
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?php echo base_url(); ?>hosts/index.php" class="nav-link">Dashboard</a>
                 </li>
@@ -59,7 +60,7 @@ to get the desired effect
                         <span class="badge badge-danger navbar-badge">3</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
+                        <a  href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
                                 <img src="<?php echo public_url(); ?>storage/tenants/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
@@ -110,6 +111,7 @@ to get the desired effect
                         <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
                     </div>
                 </li>
+
                 <!-- Notifications Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
@@ -143,15 +145,6 @@ to get the desired effect
             </ul>
         </nav>
         <!-- /.navbar -->
-        <?php
-        if (isset($section)) {
-            if ($section == "properties") {
-                include('prop_navbar.php');
-            } else {
-                include('navbar.php');
-            }
-        } else {
-            include('navbar.php');
-        } ?>
+        <?php include('prop_navbar.php'); ?>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">

@@ -61,12 +61,12 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="<?php echo base_url(); ?>hosts/profile/account.php" class="nav-link">
                                     <i class="fa fa-cog"></i> Account Settings
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="<?php echo base_url(); ?>hosts/profile/password.php" class="nav-link">
                                     <i class="fa fa-lock"></i> Change Password
                                 </a>
                             </li>
