@@ -58,7 +58,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/UI/general.html" class="nav-link">
+                            <a href="<?php echo base_url(); ?>hosts/houses/index.php" class="nav-link">
                                 <i class="fa fa-circle nav-icon"></i>
                                 <p>Houses</p>
                             </a>

@@ -49,17 +49,17 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                     <div class="card-body p-0">
                         <ul class="nav nav-pills flex-column">
                             <li class="nav-item active">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link propertySettingsBtn">
                                     <i class="fa fa-cogs"></i> Settings
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link propertyImageBtn">
                                     <i class="fa fa-cog"></i> Change Pic
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="<?php echo base_url(); ?>hosts/houses/index.php" class="nav-link">
                                     <i class="fa fa-tree"></i> Houses
                                     <span class="badge bg-info float-right">120</span>
                                 </a>
@@ -165,15 +165,35 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                                 <option value="4">OFFICES</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <label for="propertyDescription">Description</label>
+                            <textarea name="description" id="propertyDescription" class="form-control" placeholder="Enter propert description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyStartingPrice">Starting price</label>
+                            <input type="text" class="form-control" id="propertyStartingPrice" name="starting_price" placeholder="Enter Starting Price" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyFinalPrice">Final price</label>
+                            <input type="text" class="form-control" id="propertyFinalPrice" name="final_price" placeholder="Enter Final Price" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyTotalIncome">Total Income</label>
+                            <input type="text" class="form-control" id="propertyTotalIncome" name="total_income" placeholder="Enter Total Income" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyLocation">Location</label>
+                            <input type="text" class="form-control" id="propertyLocation" name="location" placeholder="Enter Location" />
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="submit" id="propertySettingsSubmitBtn" class="btn btn-success">Save changes</button>
                     </div>
                 </form>
             </div>
@@ -183,8 +203,53 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
     </div>
     <!-- settings modal -->
 
+    <div class="modal fade" id="propertyImageModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form id="propertyImageForm">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Property Image</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" id="propertyImageId" name="property_id" placeholder="Enter Property Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyImage">Property Image</label>
+                            <input type="file" id="propertyImage" name="image"/>
+                            <p class="help-block">Enter property image.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" id="propertySettingsSubmitBtn" class="btn btn-success">Save changes</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
     <!-- change picture modal -->
 </section>
 <!-- /.content -->
 
 <?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "footer.php");  ?>
+
+<script>
+    $(document).ready(function() {
+        $(document).on('click', '.propertySettingsBtn', function(e) {
+            e.preventDefault();
+            $('#propertySettingsModal').modal('show');
+        });
+
+        $(document).on('click', '.propertyImageBtn', function(e){
+            e.preventDefault();
+            $('#propertyImageModal').modal('show');
+        });
+    });
+</script>
