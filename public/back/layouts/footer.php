@@ -16,12 +16,16 @@
     <script src="<?php echo public_url(); ?>back/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="<?php echo public_url(); ?>back/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="<?php echo public_url(); ?>back/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?php echo public_url(); ?>back/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?php echo public_url(); ?>back/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="<?php echo public_url(); ?>back/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <!-- AdminLTE -->
     <script src="<?php echo public_url(); ?>back/js/adminlte.js"></script>
 
     <!-- OPTIONAL SCRIPTS -->
     <script src="<?php echo public_url(); ?>back/plugins/chart.js/Chart.min.js"></script>
     <script src="<?php echo public_url(); ?>back/js/demo.js"></script>
-    <script src="<?php echo public_url(); ?>back/js/pages/dashboard3.js"></script>
 </body>
 </html>

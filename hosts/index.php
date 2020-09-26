@@ -212,3 +212,4 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
 <!-- /.content -->
 
 <?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "footer.php"); ?>
+<script src="<?php echo public_url(); ?>back/js/pages/dashboard3.js"></script>

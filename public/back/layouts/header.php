@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="<?php echo public_url(); ?>fonts/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="<?php echo public_url(); ?>fonts/Ionicons/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?php echo public_url(); ?>back/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?php echo public_url(); ?>back/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- icheck bootstrap -->
     <link rel="stylesheet" href="<?php echo public_url(); ?>back/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
