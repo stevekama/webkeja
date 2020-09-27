@@ -7,6 +7,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title><?php echo htmlentities($title); ?></title>
+    <!-- Favicon -->
+    <link href="<?php echo public_url(); ?>storage/logo/favicon.ico" rel="shortcut icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo public_url(); ?>fonts/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
