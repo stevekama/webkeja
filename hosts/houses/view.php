@@ -51,18 +51,13 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                     <div class="card-body p-0">
                         <ul class="nav nav-pills flex-column">
                             <li class="nav-item active">
-                                <a href="#" class="nav-link">
-                                    <i class="fa fa-user"></i> Tenant
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="fa fa-users"></i> Tenants History
+                                <a href="<?php echo base_url(); ?>hosts/houses/tenants.php" class="nav-link">
+                                    <i class="fa fa-users"></i> Tenants
                                     <span class="badge bg-primary float-right">12</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="<?php echo base_url(); ?>hosts/houses/payments.php" class="nav-link">
                                     <i class="fa fa-money"></i> Payments Report
                                     <span class="badge bg-success float-right">100</span>
                                 </a>

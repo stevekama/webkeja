@@ -94,7 +94,6 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                     <div class="card-body">
                         <div class="tab-content">
                             <div class="active tab-pane" id="about">
-
                                 <strong><i class="fa fa-user mr-1"></i> Full Names</strong>
                                 <p class="text-muted">
                                     Stephen Kamau
@@ -114,11 +113,23 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                                 <hr>
 
                                 <strong><i class="fa fa-external-link-square mr-1"></i> Address</strong>
-                                <p class="text-muted">3860-00200</p>
+                                <p class="text-muted">
+                                    35678-00200
+                                </p>
                                 <hr>
 
-                                <strong><i class="fa  fa-map-marker mr-1"></i> Location</strong>
+                                <strong><i class="fa fa-map mr-1"></i> Location</strong>
                                 <p class="text-muted">Malibu, California</p>
+                                <hr>
+
+                                <strong><i class="fa fa-calendar-check-o mr-1"></i> Date of birth</strong>
+                                <p class="text-muted">
+                                    2009-09-02
+                                </p>
+                                <hr>
+
+                                <strong><i class="fa fa-cube mr-1"></i> Gender</strong>
+                                <p class="text-muted">Male</p>
                             </div>
                             <!-- /.tab-pane -->
                         </div>
