@@ -18,7 +18,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
                     <li class="breadcrumb-item">
                         <a href="<?php echo base_url(); ?>hosts/index.php">Dashboard</a>
                     </li>
-                    <li class="breadcrumb-item active">DataTables</li>
+                    <li class="breadcrumb-item active">Houses</li>
                 </ol>
             </div>
         </div>
