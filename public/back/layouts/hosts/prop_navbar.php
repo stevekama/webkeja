@@ -87,10 +87,10 @@
                 <li class="nav-header">PAYMENTS</li>
                 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="<?php echo base_url(); ?>hosts/payments/index.php" class="nav-link">
                         <i class="nav-icon fa fa-money"></i>
                         <p>
-                            Tenant Payments
+                            Monthly Payments
                         </p>
                     </a>
                 </li>

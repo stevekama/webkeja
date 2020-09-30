@@ -1,7 +1,7 @@
 <?php require_once('../../init/initialization.php');
 $title = "Hosts || View House";
 $section = "properties";
-require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
+require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "header.php"); ?>
 
 <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -142,7 +142,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
     <!-- /.container-fluid -->
 </section>
 <!-- /.content -->
-<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "footer.php"); ?>
+<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "footer.php"); ?>
 <script>
     $(document).ready(function() {
         $("#loadTenants").DataTable({

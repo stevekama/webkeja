@@ -1,7 +1,7 @@
 <?php
 require_once('../init/initialization.php');
 $title = "Hosts || Forgot";
-require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "login-header.php");
+require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "login-header.php");
 ?>
 <p class="login-box-msg">Forgot Password</p>
 
@@ -35,4 +35,5 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "login-header.php
 <p class="mb-1">
     <a href="<?php echo base_url(); ?>hosts/login.php">Remember Password</a>
 </p>
-<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "login-footer.php"); ?>
+
+<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "login-footer.php"); ?>

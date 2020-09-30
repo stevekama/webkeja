@@ -1,6 +1,6 @@
 <?php require_once('../../init/initialization.php');
 $title = "Hosts || Dashboard";
-require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
+require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "header.php"); ?>
 
 <section class="content-header">
     <div class="container-fluid">
@@ -65,7 +65,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php"); ?>
     </div>
 </section>
 
-<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "footer.php");  ?>
+<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "footer.php");  ?>
 
 <script>
     $(document).ready(function() {

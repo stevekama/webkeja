@@ -1,6 +1,6 @@
 <?php require_once('../init/initialization.php');
 $title = "Hosts || Dashboard";
-require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
+require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "header.php");
 ?>
 <!-- Content Header (Page header) -->
 <div class="content-header">
@@ -211,5 +211,5 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "header.php");
 </div>
 <!-- /.content -->
 
-<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "footer.php"); ?>
+<?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "footer.php"); ?>
 <script src="<?php echo public_url(); ?>back/js/pages/dashboard3.js"></script>
