@@ -78,11 +78,8 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . 
     </div>
 </form>
 
-<p class="mb-1">
-    <a href="<?php echo base_url(); ?>hosts/forgot.php">I forgot my password</a>
-</p>
 <p class="mb-0">
-    <a href="<?php echo base_url(); ?>hosts/register.php" class="text-center">Register a new membership</a>
+    <a href="<?php echo base_url(); ?>tenants/login.php" class="text-center">I have an account</a>
 </p>
 
 <?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . "login-footer.php"); ?>
