@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="<?php echo public_url(); ?>back/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- icheck bootstrap -->
     <link rel="stylesheet" href="<?php echo public_url(); ?>back/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="<?php echo public_url(); ?>back/plugins/toastr/toastr.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?php echo public_url(); ?>back/css/adminlte.min.css">
     <!--Styles =-->

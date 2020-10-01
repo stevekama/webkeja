@@ -5,7 +5,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . 
 ?>
 <p class="login-box-msg">Register an account</p>
 
-<form action="<?php echo base_url(); ?>tenants/login.php" method="post">
+<form id="registrationForm" method="post">
     <div class="input-group mb-3">
         <input type="text" class="form-control" name="fullnames" placeholder="Full Name">
         <div class="input-group-append">
@@ -31,6 +31,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . 
             </div>
         </div>
     </div>
+    
     <div class="input-group mb-3">
         <input type="password" name="password" class="form-control" placeholder="Password">
         <div class="input-group-append">
@@ -72,7 +73,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . 
         </div>
         <!-- /.col -->
         <div class="col-4">
-            <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+            <button type="submit" id="registrationSubmitBtn" class="btn btn-success btn-block">Sign Up</button>
         </div>
         <!-- /.col -->
     </div>
@@ -83,3 +84,31 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . 
 </p>
 
 <?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "tenants" . DS . "login-footer.php"); ?>
+
+<script>
+    $(document).ready(function(){
+        // create account
+        $('#registrationForm').submit(function(event){
+            event.preventDefault();
+            var form_data = $(this).serialize();
+            $.ajax({
+                url: "<?php echo base_url(); ?>api/tenants/new_tenant.php",
+                type: "POST",
+                data: form_data,
+                dataType: "json",
+                beforeSend: function() {
+                    $('#registrationSubmitBtn').html('Loading...');
+                },
+                success: function(data) {
+                    if (data.message == "success") {
+                        $('#registrationSubmitBtn').html('Success');
+                        toastr.success('Successfully created an account. You can login and continue..');
+                        $('#registrationForm')[0].reset();
+                        window.location.href = "<?php echo base_url(); ?>tenants/login.php";
+                    }
+                }
+            });
+        });
+
+    });
+</script>

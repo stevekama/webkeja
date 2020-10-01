@@ -24,5 +24,8 @@ require_once(CONFIG_PATH.DS.'functions.php');
 // load mail()
 require_once(VENDOR_PATH.DS.'autoload.php');
 
+// mail class
+require_once(MODELS_PATH.DS.'mail.php');
+
 // load tenants
 require_once(MODELS_PATH.DS.'tenants.php');

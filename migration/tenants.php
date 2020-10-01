@@ -8,7 +8,7 @@ class Tenants_Migration
     private $conn;
 
     // table name and schema 
-    public $table_name = "tenants";
+    private $table_name = "tenants";
 
     // connect to db
     public function __construct()

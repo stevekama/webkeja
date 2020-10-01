@@ -1,11 +1,12 @@
 <?php
 
-require_once(INIT_PATH . DS . 'initialization_migration.php');
+require_once(INIT_PATH . DS . 'initialization.php');
 
-class Tenants extends Tenants_Migration
+class Tenants
 {
 
     private $conn;
+    private $table_name = "tenants";
 
     // table properties
     public $id;
