@@ -4,9 +4,9 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "l
 
 <p class="login-box-msg">Sign in to start your session</p>
 
-<form action="<?php echo base_url(); ?>tenants/index.php" method="post">
+<form id="loginForm" method="post">
     <div class="input-group mb-3">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" name="email" class="form-control" placeholder="Email">
         <div class="input-group-append">
             <div class="input-group-text">
                 <span class="fa fa-envelope"></span>
@@ -14,7 +14,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "l
         </div>
     </div>
     <div class="input-group mb-3">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" name="password" class="form-control" placeholder="Password">
         <div class="input-group-append">
             <div class="input-group-text">
                 <span class="fa fa-lock"></span>
@@ -27,7 +27,7 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "l
         </div>
         <!-- /.col -->
         <div class="col-4">
-            <button type="submit" class="btn btn-success btn-block">Sign In</button>
+            <button type="submit" id="loginSubmitBtn" class="btn btn-success btn-block">Sign In</button>
         </div>
         <!-- /.col -->
     </div>
@@ -41,3 +41,29 @@ require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "l
 </p>
 
 <?php require_once(PUBLIC_PATH . DS . "back" . DS . "layouts" . DS . "hosts" . DS . "login-footer.php"); ?>
+
+<script>
+    $(document).ready(function(){
+        $('#loginForm').submit(function(event) {
+            event.preventDefault();
+            var form_data = $(this).serialize();
+            $.ajax({
+                url: "<?php echo base_url(); ?>api/tenants/login.php",
+                type: "POST",
+                data: form_data,
+                dataType: "json",
+                beforeSend: function() {
+                    $('#loginSubmitBtn').html('Loading...');
+                },
+                success: function(data) {
+                    if (data.message == "success") {
+                        toastr.success('Successfully logged in to your account');
+                        $('#loginSubmitBtn').html('success');
+                        $('#loginForm')[0].reset();
+                        window.location.href = "<?php echo base_url(); ?>tenants/index.php";
+                    }
+                }
+            });
+        });
+    })
+</script>
