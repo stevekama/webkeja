@@ -16,3 +16,10 @@ function redirect_to($new_location){
     header("Location: ".$new_location);
     exit;
 }
+
+function truncate_string($string, $limit){
+    $allchars = $string;
+    $string = substr($string, 0, $limit);
+    $string = substr($string, 0, strrpos($string," "));
+    return $string;
+}
